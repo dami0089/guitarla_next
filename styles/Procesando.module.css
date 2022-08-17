@@ -1,0 +1,41 @@
+.procesando{
+    border-radius: 1rem;
+    background-color: blanchedalmond;
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.procesando h1{
+    color: var(--primary);
+    text-align: center;
+    
+}
+
+.procesando span{
+    color: cadetblue;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.proceso{
+    margin-top: 2rem;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: 900;
+    color: var(--negro);
+    background-color: white;
+    border: 2px solid var(--primary);
+    padding: 1rem 5rem;
+    transition-property: backgroind-color;
+    transition-duration: .3s;
+    border-radius: 1rem;
+}
+.proceso:hover{
+    background-color: var(--primary);
+    color: var(--blanco);
+}
+

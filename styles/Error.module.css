@@ -1,0 +1,11 @@
+.alerta{
+    color:white;
+    background-color: red;
+    text-transform: uppercase;
+    border-radius: 2rem;
+    font-size: medium;
+    text-align: center;
+    font: bold;
+}
+
+

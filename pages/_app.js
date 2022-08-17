@@ -4,6 +4,11 @@ import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
   const [carrito, setCarrito] = useState([]);
+  const [compra, setCompra] = useState({});
+
+  // useEffect(() => {
+  //   console.log(compra);
+  // }, [compra]);
 
   useEffect(() => {
     const carritoLS = JSON.parse(localStorage.getItem("carrito")) ?? [];
@@ -24,9 +29,11 @@ function MyApp({ Component, pageProps }) {
         }
         return articulo;
       });
-      setCarrito(carritoActualizado);
+      setCarrito([...carrito, producto]);
+      // console.log("Se agrego carrito actualizado" + carritoActualizado);
     } else {
       setCarrito([...carrito, producto]);
+      // console.log("Se entro en el else de ...carrito,producto" + carrito);
     }
   };
 
@@ -52,6 +59,9 @@ function MyApp({ Component, pageProps }) {
       {...pageProps}
       carrito={carrito}
       agregarCarrito={agregarCarrito}
+      setCarrito={setCarrito}
+      compra={compra}
+      setCompra={setCompra}
       atualizarCatidad={atualizarCatidad}
       eliminarProducto={eliminarProducto}
     />

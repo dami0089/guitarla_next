@@ -85,3 +85,53 @@ margin-bottom: 1rem;
     padding: 3rem;
     border-radius: 1rem;
 }
+.resumen h3{
+    color: var(--primary);
+    text-align: center;
+}
+.totales {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+.totales h4{
+    font-weight: 900;
+    font-style: italic;
+}
+.dataInput{
+    all: unset;
+    /* padding : 1rem; */
+    padding-right: auto;
+    border: 1px solid #cfcfcf;
+    flex: 1;
+    text-align: center;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    
+
+}
+
+.centrado{
+    display: flex;
+    flex-direction: column;
+}
+
+.confirmar{
+    margin-top: 2rem;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: 900;
+    color: var(--negro);
+    background-color: white;
+    border: 2px solid var(--primary);
+    padding: 1rem 5rem;
+    transition-property: backgroind-color;
+    transition-duration: .3s;
+    border-radius: 1rem;
+}
+.confirmar:hover{
+    background-color: var(--primary);
+    color: var(--blanco);
+}

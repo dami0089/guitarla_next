@@ -6,6 +6,7 @@ import styles from "../../styles/Guitarras.module.css";
 const Producto = ({ guitarra, agregarCarrito }) => {
   const [cantidad, setCantidad] = useState(1);
   const { descripcion, imagen, nombre, precio, id } = guitarra[0];
+  // console.log(nombre);
   const handleSubmit = (e) => {
     e.preventDefault();
     if (cantidad < 1) {
@@ -21,6 +22,7 @@ const Producto = ({ guitarra, agregarCarrito }) => {
       cantidad,
     };
     agregarCarrito(guitarraSeleccionada);
+    alert(`La guitarra ${nombre} fue agregado correctamente`);
   };
   return (
     <Layout pagina={`Guitarra ${nombre}`}>
